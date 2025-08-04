@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { ArrowRight, Zap, BarChart3, Clock } from 'lucide-react'
+import EmailSignupForm from '@/app/components/ui/EmailSignupForm'
 
 export default function HomePage() {
   return (
@@ -53,6 +54,14 @@ export default function HomePage() {
           <p className="text-sm text-gray-500 mt-4">
             No credit card required • 5 free replies daily
           </p>
+        </div>
+      </section>
+
+      <section className="px-6 py-12 bg-white">
+        <div className="max-w-xl mx-auto text-center">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-4">Want early access?</h2>
+          <p className="text-gray-600 mb-6">Be the first to try ReplyAI and shape its future. No spam, just early insights.</p>
+          <EmailSignupForm />
         </div>
       </section>
 
